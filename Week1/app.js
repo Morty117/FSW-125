@@ -9,18 +9,20 @@
 
 
 // set the entire require as a value to a new variable of Math Object
-// const mathObj =  require('./math')
+const mathObj =  require('./math')
 
-// console.log(mathObj.sum(5, 10))
-// console.log(mathObj.subtract(6, 6))
-// console.log(mathObj.multiply(8, 9))
-// console.log(mathObj.division(7, 7))
+console.log(mathObj.sum(5, 10))
+console.log(mathObj.subtract(6, 6))
+console.log(mathObj.multiply(8, 9))
+console.log(mathObj.division(7, 7))
 
-const Greet = require('./math')
 
-// in order to interact with the constructor function, we need to instantiate a new object class
-const greetr = new Greet() // construtor function syntax for invoking functions
 
-console.log(Greet)
-console.log(greetr)
-console.log(greetr.greet())
+// const Greet = require('./math')
+
+// // in order to interact with the constructor function, we need to instantiate a new object class
+// const greetr = new Greet() // construtor function syntax for invoking functions
+
+// console.log(Greet)
+// console.log(greetr)
+// console.log(greetr.greet())
