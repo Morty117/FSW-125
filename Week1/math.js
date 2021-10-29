@@ -54,11 +54,11 @@ module.exports = {
 
 // 4. set module exports equal to a function constructor
 
-function Greetr() {
-    this.greeting = 'hello world',
-    this.greet = function(){
-        console.log(this.greeting)
-    }
-}
+// function Greetr() {
+//     this.greeting = 'hello world',
+//     this.greet = function(){
+//         console.log(this.greeting)
+//     }
+// }
 
-module.exports = Greetr
+// module.exports = Greetr
