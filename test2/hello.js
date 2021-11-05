@@ -19,3 +19,6 @@ const server = http.createServer(function(req, res){
 server.listen(port, hostname, function(){
     console.log(`Server running at http://${hostname}:${port}/`)
 })
+
+// Navigate to http://localhost:8000 to see the text
+// use node hello.js to see the hostname and port
