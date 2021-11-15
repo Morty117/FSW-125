@@ -8,7 +8,7 @@
     - package.json does a few things for us
         1. lists the dependencies our package depends on
         2. specify the versions of any project we are using and allowing our builds to be repoduceable/easier to share with other developers
-    - The only thing we need in this file is the 'name': of the project\
+    - The only thing we need in this file is the 'name': of the project
     - IF YOU'RE using npmjs.com use mature frameworks that have:
         - LOTS of weekly downloads 
         - THE SIZE won't be too large or have multiple dependencies inside the dependencies

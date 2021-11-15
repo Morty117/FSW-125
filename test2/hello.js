@@ -9,7 +9,7 @@ const port = 8000
 const server = http.createServer(function(req, res){
 
     // set the response http header with HTTP status and Content type
-    res.writeHead(200, {'COntent-type' : 'text/plain'})
+    res.writeHead(200, {'Content-type' : 'text/plain'})
 
     // send the response body 'Hello World'\
     res.end('Hello World\n')
