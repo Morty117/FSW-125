@@ -1,4 +1,5 @@
 const express = require('express')
+const morgan = require('morgan')
 const app = express()
 const { v4: uuidv4} = require('uuid')
 
@@ -7,8 +8,10 @@ const PORT = 3000
 const bookRouter =  require('./routes/bookRouter')
 const tvShowRouter =  require('./routes/tvShowRouter')
 
+// middlware
 app.use(express.json())
-
+// Morgan middleware gives a log of the time it took to load and the route path used
+app.use(morgan('dev'))
 
 app.use('/books', bookRouter)
 app.use('/tv-shows', tvShowRouter)

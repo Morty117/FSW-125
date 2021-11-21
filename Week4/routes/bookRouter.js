@@ -20,9 +20,22 @@ let books = [
 // a route parameter is always a string with positive length
 
 bookRouter
-    .get('/', (req, res) => {
-        res.send(books)
+    .get('/', (req, res, next) => {
+        // res.send(books)
+        console.log('pre next')
+        next()
     }) // GET all
+
+    // when a middleware function takes a route path as an argument the middleware fucntion is thus mountes to the path
+
+    .get('/', (req, res, next) => {
+        next()
+    })
+
+    .get('/', (req, res, next) => {
+        res.send(books)
+    })
+
 
     .get('/:bookId', (req, res) => {
         // console.log(req.params)
