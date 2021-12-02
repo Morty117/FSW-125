@@ -11,16 +11,19 @@ let bounties = [
 
 bountyHunterRouter
     .get('/', (req, res) => {
+
+        console.log('inside router')
+
         res.send(bounties)
     })
 
     .post('/', (req, res) => {
-        const bounty = req.body
-        bounty._id = uuidv4()
-        bounties.push(bounty)
+        const newbounty = req.body
+        newbounty._id = uuidv4()
+        bounties.push(newbounty)
 
         console.log(bounties)
-        res.send(`Successfully added ${bounties.title} to the database`)
+        res.send(newbounty)
     })
 
     .delete('/:bountyId', (req, res) => {
@@ -36,7 +39,7 @@ bountyHunterRouter
         const bountyIndex = bounties.findIndex(bounty => bounty._id === bountyId)
         Object.assign(bounties[bountyIndex], req.body)
 
-        res.send('Bounty updated')
+        res.send(req.body)
     })
 
 module.exports = bountyHunterRouter
