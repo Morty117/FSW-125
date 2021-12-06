@@ -52,10 +52,16 @@ function App() {
   }, [])
   
   return (
-    <div className="App">
+    <>
+      <div className="App">
+      <h1 className="bounty-title">Bounties from the Galaxy</h1>
+      <h2 className="bounty-message">Good hunting Bounty Hunters</h2>
+      <h2 className='Post'>Post a Bounty</h2>
       <BountyForm submit={addBounty} />
+      <h2 className="bounty-list">Choose a Bounty or Update</h2>
       {bountyList}
-    </div>
+      </div>
+    </>
   );
 }
 

@@ -1,16 +1,11 @@
+body {
+  background-image: url(https://media.istockphoto.com/photos/background-of-galaxy-and-stars-picture-id1035676256?b=1&k=20&m=1035676256&s=170667a&w=0&h=NOtiiFfDhhUhZgQ4wZmHPXxHvt3RFVD-lTmnWCeyIG4=);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -24,15 +19,49 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bounty-title {
+  margin: 0px;
+  font-size: 75px;
+  background-color: #D32F2F;
+  font-family: 'Teko', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bounty-message {
+  font-family: 'Teko', sans-serif;
+  font-size: 40px;
+}
+
+.Post {
+  margin-bottom: 0px;
+  font-family: 'Teko', sans-serif;
+}
+
+.bounty-form {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.bounty-list {
+  font-family: 'Teko', sans-serif;
+  font-size: 50px;
+  margin-top: 3.0rem;
+  margin-bottom: 1.0rem;
+  text-decoration: underline;
+}
+
+.bounty {
+  font-family: 'Teko', sans-serif;
+}
+
+input {
+  font-family: 'Teko', sans-serif;
+  font-size: 20px;
+}
+
+button {
+  font-family: 'Teko', sans-serif;
+  font-size: 20px;
 }

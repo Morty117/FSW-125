@@ -20,7 +20,7 @@ function BountyForm({first, last, bountyAmount, type, submit, _id}) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className='bounty-form' onSubmit={handleSubmit}>
             <input 
                 type='text'
                 name='first'
