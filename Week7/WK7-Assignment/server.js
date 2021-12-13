@@ -6,6 +6,9 @@ const PORT = 9000
 
 const actorRouter = require('./routes/ActorRouter')
 
+app.use(express.json())
+app.use(morgan('dev'))
+
 app.use('/actors', actorRouter)
 
 app.use((err, req, res, next) => {
