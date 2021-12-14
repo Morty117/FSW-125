@@ -4,7 +4,7 @@ function ActorForm({ first, last, imgUrl, alive, movies, age, _id, postActor }) 
     const intialInputs = {first: "", last: "", imgUrl: "", alive: false, movies: [], age: 0}
 
     const [inputs, setInputs] = useState(intialInputs)
-    const [living, setLiving] = useState(false)
+    // const [living, setLiving] = useState(false)
 
     const handleChange = (e) => {
         const {name, value} = e.target
@@ -25,8 +25,8 @@ function ActorForm({ first, last, imgUrl, alive, movies, age, _id, postActor }) 
             <input onChange={ handleChange } type='text' name='imgUrl' placeholder='ActorImageUrl' value={inputs.imgUrl}></input>
             {/* <label>Alive?</label>
             <input type='checkbox' value={inputs.alive}>YES</input>
-            <input type='checkbox' value={inputs.alive}>NO</input>
-            <input></input><input></input><input></input> */}
+            <input type='checkbox' value={inputs.alive}>NO</input> */}
+            <input onChange={ handleChange } type="text" name='movies' placeholder='Movies they have been in' value={inputs.movies} ></input>
             <input onChange={ handleChange } type='number' name='age' placeholder='Age' value={inputs.age}></input>
             <button className='addBtn'>Submit Actor</button>
         </form>

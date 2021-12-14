@@ -21,7 +21,9 @@ function App() {
     axios.post('/actors', newActor)
       .then(res => {
         console.log("new actor: ", res.data)
+        setActors(prevActor => [...prevActor, res.data])
       })
+      .catch(err => console.log(err))
   }
 
   useEffect(() => {
