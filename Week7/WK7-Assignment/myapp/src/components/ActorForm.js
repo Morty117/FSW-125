@@ -4,11 +4,13 @@ function ActorForm({ first, last, imgUrl, alive, movies, age, _id, postActor }) 
     const intialInputs = {first: "", last: "", imgUrl: "", alive: false, movies: [], age: 0}
 
     const [inputs, setInputs] = useState(intialInputs)
+    // const [moviesList, setMoviesList] = useState()
     // const [living, setLiving] = useState(false)
 
     const handleChange = (e) => {
         const {name, value} = e.target
         setInputs(prevInput => ({...prevInput, [name]: value}))
+        
     }
 
     const handleSubmit = (e) => {

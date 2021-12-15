@@ -3,9 +3,33 @@ const actorRouter = express.Router()
 const { v4: uuidv4 } = require('uuid')
 
 let actors = [
-    {first: "Tom", last: "Hanks", imgUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3410K_E-KFTkTZsjZlVviBUtIpa7OwWnCW9ZbCvGDO2yaAeaYVJw_87IIPP7RsfAHlVo&usqp=CAU", alive: true, movies: ["Saving Private Ryan", "Cast Away", "Forrest Gump"], age: 65, _id: uuidv4()},
-    {first: "Arnold", last: "Schwarzenegger", imgUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdBPuH4tl7QqpoI5bKrFjNZ_UKjlYDgLVZFw&usqp=CAU", alive: true, movies: ["Predator", "Commando", "Terminator 2"], age: 74, _id: uuidv4()},
-    {first: "Keanu", last: "Reeves", imgUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShjlAJXlsAHTBXllnZFTg5D9cFrDhfHdE76LlluU7vM8XGmx34ACHcBBb12a4Xa6nSRjA&usqp=CAU", alive: true, movies: ["John Wick", "The Matrix", "Street Kings"], age: 57, _id: uuidv4()},
+    {
+        first: "Tom",
+        last: "Hanks",
+        imgUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3410K_E-KFTkTZsjZlVviBUtIpa7OwWnCW9ZbCvGDO2yaAeaYVJw_87IIPP7RsfAHlVo&usqp=CAU", 
+        alive: true, 
+        movies: ["Saving Private Ryan", "Cast Away", "Forrest Gump"], 
+        age: 65, 
+        _id: uuidv4()
+    },
+    {
+        first: "Arnold", 
+        last: "Schwarzenegger", 
+        imgUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdBPuH4tl7QqpoI5bKrFjNZ_UKjlYDgLVZFw&usqp=CAU", 
+        alive: true, 
+        movies: ["Predator", "Commando", "Terminator 2"], 
+        age: 74, 
+        _id: uuidv4()
+    },
+    {
+        first: "Keanu", 
+        last: "Reeves", 
+        imgUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShjlAJXlsAHTBXllnZFTg5D9cFrDhfHdE76LlluU7vM8XGmx34ACHcBBb12a4Xa6nSRjA&usqp=CAU", 
+        alive: true, 
+        movies: ["John Wick", "The Matrix", "Street Kings"], 
+        age: 57,
+        _id: uuidv4()
+    },
 ]
 
 actorRouter
