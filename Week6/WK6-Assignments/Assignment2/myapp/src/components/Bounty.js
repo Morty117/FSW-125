@@ -30,7 +30,7 @@ function Bounty ({first, last, bountyAmount, type, _id, updateBounty, deleteBoun
                         last={last}
                         bountyAmount={bountyAmount} 
                         type={type}
-         _              _id={_id}
+                        _id={_id}
                     />
                     <button onClick={() => setToggle(prevToggle => !prevToggle)}>Close</button>
                 </>
